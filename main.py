@@ -1,12 +1,15 @@
+import os
 import requests
 import bs4
 from fake_headers import Headers
 from pprint import pprint as pp
 from tqdm import tqdm
+from utils import logger1
+from colorama import Fore
 
 
 BASE_URL = 'https://habr.com/ru/articles/'
-keywords = ['дизайн', 'фото', 'web', 'python']
+keywords = ['США', 'ChatGPT', 'DNS']
 
 
 def all_articles():
@@ -17,6 +20,13 @@ def all_articles():
     return articles
 
 
+def filelogout():
+    path = 'main.log'
+    print(Fore.RED + f'Создан файл логга: {path}...')
+    if os.path.exists(path):
+        os.remove(path)
+
+@logger1
 def result_articles():
     analyzed_articles = []
     for article in tqdm(all_articles(), desc ="Идет обработка статей..."):
@@ -34,7 +44,10 @@ def result_articles():
                     'time': time,
                     'URL': 'https://habr.com' + link['href'],
                 })
-    return pp(analyzed_articles)
+    pp(f'{analyzed_articles}')
+    filelogout()
+    return analyzed_articles
+
 
 if __name__ == "__main__":
-    result_articles()
+   result_articles()

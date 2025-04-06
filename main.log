@@ -1,0 +1,4 @@
+Дата запуска функции: 2025-04-06 14:15:21.189217;
+ Имя функции:result_articles;
+ Аргументы функции:[]{}
+ Результат: [{'title': 'Анатомия падения: что произошло с первым IPO BATS Global Markets и какие вопросы это ставит перед алготрейдингом', 'time': '2025-04-06T09:00:35.000Z', 'URL': 'https://habr.com/ru/companies/finam_broker/articles/897340/'}, {'title': 'Личный ИИ-ассистент на ваших данных. Часть 1: Векторная база ChromaDB + DeepSeek | GPT', 'time': '2025-04-06T08:39:49.000Z', 'URL': 'https://habr.com/ru/companies/amvera/articles/897830/'}, {'title': 'Как я нашел учетные данные к БД с помощью разведки в VDP от Gcash', 'time': '2025-04-06T08:36:20.000Z', 'URL': 'https://habr.com/ru/articles/897954/'}, {'title': 'Не армейская игрушка и не опытная зверушка…', 'time': '2025-04-06T08:21:58.000Z', 'URL': 'https://habr.com/ru/articles/897018/'}]
